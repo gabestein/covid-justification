@@ -3,17 +3,13 @@
   "site_title": "Covid Justifications",
   "site_description": "Coming soon",
   "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "Netlify"
-    },
-    {
-      "keyword": "React"
-    }
+    "covid-19",
+    "misinformation",
+    "denialism",
+    "disinformation",
+    "inoculation theory"
   ],
   "posts_per_page": 5,
-  "twitter_account": "@my-account",
-  "github_account": "wutali"
+  "twitter_account": "@scibeh",
+  "github_account": "gabestein"
 }

@@ -23,7 +23,7 @@ export default function Navigation() {
                   router.pathname.startsWith("/attitudes") ? "active" : null
                 }
               >
-                blog
+                attitudes
               </a>
             </Link>
           </li>

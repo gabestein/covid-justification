@@ -96,7 +96,7 @@ collections:
     create: true
     slug: "{{slug}}"
     identifier_field: "slug"
-    summary: "{{description}}"
+    summary: "{{title}}"
     fields:
       - label: "Slug"
         name: "slug"
@@ -123,6 +123,34 @@ collections:
   - name: "arguments"
     label: "Arguments"
     folder: "src/pages/arguments"
+    extension: "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    summary: "{{title}}"
+    fields:
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+      - label: "Title"
+        name: "title"
+      - layout: "Layout"
+        name: "layout"
+        default: "generic"
+      - label: "Rebuttals"
+        name: "rebuttals"
+        widget: "relation"
+        multiple: true
+        collection: "rebuttals"
+        value_field: "title"
+        search_fields: 
+          - "title"
+          - "slug"
+
+  - name: "rebuttals"
+    label: "Rebuttals"
+    folder: "src/pages/rebuttals"
     extension: "mdx"
     format: "frontmatter"
     create: true

@@ -42,6 +42,7 @@ export default function Index({
           <article>
             <header>
               <h1>{title}</h1>
+              <p>{description}</p>
             </header>
             <div className={styles.content}>{content}</div>
           </article>

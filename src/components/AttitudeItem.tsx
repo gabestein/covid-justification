@@ -9,6 +9,7 @@ export default function AttitudeItem({ attitude }: Props) {
     <Link href={"/attitudes/" + attitude.slug}>
       <a>
         <h2>{attitude.title}</h2>
+        <p>{attitude.description}</p>
         <style jsx>
           {`
             a {

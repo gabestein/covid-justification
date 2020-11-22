@@ -3,7 +3,7 @@ backend:
   branch: master
 media_folder: public/images
 public_folder: /images
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 collections:
   - name: "config"
@@ -87,6 +87,7 @@ collections:
                 name: "name"
                 widget: "string"
                 hint: "Tag name for displaying on the site"
+
   - name: "attitudes"
     label: "Attitudes"
     folder: "src/pages/attitudes"
@@ -117,7 +118,7 @@ collections:
         search_fields: 
           - "title"
           - "slug"
-          - "description"
+
   - name: "arguments"
     label: "Arguments"
     folder: "src/pages/arguments"
@@ -133,54 +134,6 @@ collections:
         widget: "string"
       - label: "Title"
         name: "title"
-  - name: "posts"
-    label: "Posts"
-    folder: "src/pages/posts"
-    extension: "mdx"
-    format: "frontmatter"
-    create: true
-    slug: "{{slug}}"
-    identifier_field: slug
-    summary: "{{title}}"
-    fields:
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Publish Date"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DD"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
-      - label: Author
-        name: "author"
-        widget: relation
-        collection: "meta"
-        file: "authors"
-        searchFields:
-          - "authors.*.name"
-        displayFields:
-          - "authors.*.name"
-        valueField: "authors.*.slug"
-      - label: Tags
-        label_singular: "Tag"
-        name: "tags"
-        widget: list
-        summary: "{{fields.tag}}"
-        field:
-          label: Tag
-          name: tag
-          widget: relation
-          collection: "meta"
-          file: "tags"
-          searchFields:
-            - "tags.*.name"
-          displayFields:
-            - "tags.*.name"
-          valueField: "tags.*.slug"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - layout: "Layout"
+        name: "layout"
+        default: "generic"

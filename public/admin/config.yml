@@ -116,7 +116,7 @@ collections:
         required: false
         multiple: true
         collection: "arguments"
-        value_field: "slug"
+        value_field: "title"
         search_fields: 
           - "title"
           - "slug"

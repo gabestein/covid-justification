@@ -82,9 +82,6 @@ export default function Index({
             </ul>
           </article>
           <footer>
-            <div className={"social-list"}>
-              <SocialList />
-            </div>
             <Copyright />
           </footer>
         </div>

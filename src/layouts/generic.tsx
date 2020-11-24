@@ -47,9 +47,6 @@ export default function Index({
             <div className={styles.content}>{content}</div>
           </article>
           <footer>
-            <div className={"social-list"}>
-              <SocialList />
-            </div>
             <Copyright />
           </footer>
         </div>

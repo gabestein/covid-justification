@@ -142,6 +142,7 @@ collections:
       - label: "Rebuttals"
         name: "rebuttals"
         widget: "relation"
+        required: false
         multiple: true
         collection: "rebuttals"
         value_field: "title"

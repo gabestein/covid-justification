@@ -39,9 +39,9 @@ function fetchArgumentContent(slug: string): ArgumentContent {
 let attitudeCache: AttitudeContent[];
 
 function fetchAttitudeContent(): AttitudeContent[] {
-  /*if (attitudeCache) {
+  if (attitudeCache) {
     return attitudeCache;
-  }*/
+  }
   // Get file names under /posts
   const fileNames = fs.readdirSync(attitudesDirectory);
   const allAttitudesData = fileNames
@@ -68,7 +68,6 @@ function fetchAttitudeContent(): AttitudeContent[] {
       let argumentContents = matterData.arguments.map((argument) => {
         return fetchArgumentContent(argument);
       })
-      console.log('contents', argumentContents);
 
       const attitudeData = {
         title: matterData.title,

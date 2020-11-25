@@ -7,11 +7,13 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
+import { ArgumentContent } from '../lib/attitudes';
 
 type Props = {
   title: string;
   slug: string;
   description: string;
+  arguments: ArgumentContent[];
 };
 export default function Index({
   title,
